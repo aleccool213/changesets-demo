@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "name": "changesets-demo",
+  "private": true,
+  "packageManager": "yarn@3.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@changesets/cli": "^2.25.1"
+  }
+}
