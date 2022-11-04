@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
   cacheKey: 8
 
 "@babel/code-frame@npm:^7.0.0":
@@ -512,6 +512,8 @@ __metadata:
 "changesets-app@^1.0.0, changesets-app@workspace:packages/app":
   version: 0.0.0-use.local
   resolution: "changesets-app@workspace:packages/app"
+  dependencies:
+    changesets-package: 1.0.0
   languageName: unknown
   linkType: soft
 
@@ -528,6 +530,12 @@ __metadata:
   resolution: "changesets-docs@workspace:packages/docs"
   dependencies:
     changesets-app: ^1.0.0
+  languageName: unknown
+  linkType: soft
+
+"changesets-package@1.0.0, changesets-package@workspace:packages/package":
+  version: 0.0.0-use.local
+  resolution: "changesets-package@workspace:packages/package"
   languageName: unknown
   linkType: soft
 
