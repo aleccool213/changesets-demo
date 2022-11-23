@@ -1,8 +1,0 @@
-{
-  "version": "1.0.0",
-  "name": "changesets-docs",
-  "main": "index.js",
-  "dependencies": {
-    "changesets-app": "^1.0.0"
-  }
-}

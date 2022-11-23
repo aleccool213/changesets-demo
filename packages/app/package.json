@@ -3,7 +3,7 @@
   "name": "changesets-app",
   "main": "index.js",
   "dependencies": {
-    "changesets-package": "1.0.0"
+    "changesets-package-ordering": "1.0.0"
   },
   "scripts": {
     "start": "node ./index.js"
