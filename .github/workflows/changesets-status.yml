@@ -1,0 +1,21 @@
+name: "changesets status"
+
+on: [pull_request]
+
+jobs:
+  changesets_status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Set Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Run install
+        run: npm i -g yarn && yarn install
+
+      - name: Fail if no changeset found
+        run: yarn changeset status

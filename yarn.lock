@@ -509,11 +509,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"changesets-app@^1.0.0, changesets-app@workspace:packages/app":
+"changesets-app@workspace:packages/app":
   version: 0.0.0-use.local
   resolution: "changesets-app@workspace:packages/app"
   dependencies:
-    changesets-package: 1.0.0
+    changesets-package-ordering: 1.0.0
   languageName: unknown
   linkType: soft
 
@@ -525,17 +525,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"changesets-docs@workspace:packages/docs":
+"changesets-package-ordering@1.0.0, changesets-package-ordering@workspace:packages/package-ordering":
   version: 0.0.0-use.local
-  resolution: "changesets-docs@workspace:packages/docs"
-  dependencies:
-    changesets-app: ^1.0.0
-  languageName: unknown
-  linkType: soft
-
-"changesets-package@1.0.0, changesets-package@workspace:packages/package":
-  version: 0.0.0-use.local
-  resolution: "changesets-package@workspace:packages/package"
+  resolution: "changesets-package-ordering@workspace:packages/package-ordering"
   languageName: unknown
   linkType: soft
 
