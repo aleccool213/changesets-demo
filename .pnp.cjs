@@ -20,12 +20,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/app"\
       },\
       {\
-        "name": "changesets-docs",\
-        "reference": "workspace:packages/docs"\
-      },\
-      {\
-        "name": "changesets-package",\
-        "reference": "workspace:packages/package"\
+        "name": "changesets-package-ordering",\
+        "reference": "workspace:packages/package-ordering"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -33,8 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["changesets-app", ["workspace:packages/app"]],\
       ["changesets-demo", ["workspace:."]],\
-      ["changesets-docs", ["workspace:packages/docs"]],\
-      ["changesets-package", ["workspace:packages/package"]]\
+      ["changesets-package-ordering", ["workspace:packages/package-ordering"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -610,7 +605,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/app/",\
           "packageDependencies": [\
             ["changesets-app", "workspace:packages/app"],\
-            ["changesets-package", "workspace:packages/package"]\
+            ["changesets-package-ordering", "workspace:packages/package-ordering"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -625,21 +620,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
-      ["changesets-docs", [\
-        ["workspace:packages/docs", {\
-          "packageLocation": "./packages/docs/",\
+      ["changesets-package-ordering", [\
+        ["workspace:packages/package-ordering", {\
+          "packageLocation": "./packages/package-ordering/",\
           "packageDependencies": [\
-            ["changesets-docs", "workspace:packages/docs"],\
-            ["changesets-app", "workspace:packages/app"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["changesets-package", [\
-        ["workspace:packages/package", {\
-          "packageLocation": "./packages/package/",\
-          "packageDependencies": [\
-            ["changesets-package", "workspace:packages/package"]\
+            ["changesets-package-ordering", "workspace:packages/package-ordering"]\
           ],\
           "linkType": "SOFT"\
         }]\
